@@ -4,12 +4,20 @@
  * Date: 2016/10/31
  * Author: 1050210XX 周永振老師
  */
-
+import java.util.Scanner;
 public class ex03 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Scanner scn = new Scanner(System.in);
+		int val=scn.nextInt();
+		decomp(val);
+	}
+	public static void decomp(int val){
+		String val2 = Integer.toString(val);
+		for(int a = 0;a < val2.length();a++){
+			System.out.print(val2.charAt(a) + " ");
+		}
 	}
 
 }
